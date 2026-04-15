@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #121212;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background: black;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar p {
+    margin: 15px 0;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.search {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #181818;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background: #282828;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* PLAYER */
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* INFO */
+.music-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.music-info img {
+    width: 50px;
+    border-radius: 4px;
+}
+
+/* CONTROLS */
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#playBtn {
+    background: white;
+    color: black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* EXTRA */
+.extra-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#progress {
+    width: 200px;
+}
+
+#volume {
+    width: 80px;
+}
